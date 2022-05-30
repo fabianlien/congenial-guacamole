@@ -25,7 +25,7 @@ export class Content extends Component {
 
   filterPosts = (event) => {
     const name = event.target.value.toLowerCase()
-    const filteredPosts = savedPosts.filter((post)=>{
+    const filteredPosts = savedPosts.filter(post => {
       return post.name.toLowerCase().includes(name);
   })
     this.setState({posts: filteredPosts})
