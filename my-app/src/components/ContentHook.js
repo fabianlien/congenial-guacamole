@@ -12,7 +12,7 @@ function ContentHook() {
             setIsLoaded(true);
             setFetchedPosts(savedPosts)
         }, 1000)
-    })
+    }, [])
     const handleChange = (e) => {
         const name = e.target.value.toLowerCase()
         const filteredPosts = savedPosts.filter(post => {
